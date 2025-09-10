@@ -1,10 +1,13 @@
 import './App.css'
+import CourseList from './CourseList'
+import { courseList } from './data/courseList';
 
-function App() {
-
+function App(
+  { courses }: courseList
+) {
   return (
     <>
-      <div>Week exercise 2 - Read README.md for instructions</div>
+      <CourseList courses={courses} />
     </>
   )
 }
